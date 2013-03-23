@@ -1,8 +1,145 @@
 <html>
 <head>
     <title>Dash</title>
+    <link rel="stylesheet" href="/css/ratchet.css">
 </head>
 <body>
-<h1>Dash</h1>
+
+<header class="bar-title">
+    <h1 class="title">Dash</h1>
+</header>
+
+<div class="content">
+    <div id="view-course-list">
+        <ul class="list course-list">
+          <li class="course-item">
+                <h3>Cannonball Run</h3>
+                <div class="course-item-best-dash">
+                    Best Dash- 10:53
+                </div>
+          </li>
+
+          <li>List item 2</li>
+          <li class="list-divider">List Divider</li>
+          <li>List item 3</li>
+        </ul>
+    </div>
+</div>
+
+<!--
+<div class="home-view">
+    <div class="new-dash">
+        Start a new dash
+    </div>
+
+    <ul class="course-list">
+        <li class="course-item">
+            <h3>Cannonball run</h3>
+            <div class="dash">
+                Best Dash: 10:53
+            </div>
+            
+            <div class="meta">
+                average: 50
+                total dashes: 100
+            </div>
+            
+        </li>
+        <li class="course-item">
+            Cannonball run
+        </li>
+        <li class="course-item">
+            Cannonball run
+        </li>
+    </ul>
+</div>
+
+-->
+
+
+<!-- <ul class='CourseList'>
+    <p>Your Courses</p>
+    <li class='Course'></li>
+</ul>
+<button class='DashStartButton'>Start Dash</button>
+ -->
+<!--
+<script src="/js/underscore.js"></script>
+<script src="/js/jquery.js"></script>
+<script src="/js/backbone.js"></script>
+
+
+<script>
+
+//
+var Course = Backbone.Model.extend();
+    // distance
+    // dashes
+
+
+var Point = Backbone.Model.extend();
+// name
+// id
+// geolocation - lat/lng
+
+var Dash = Backbone.Model.extend();
+    // starttime
+    // endtime
+
+var Dasher = Backbone.Model.extend();
+
+// lat 49.2823 lng -123.1110
+var pointMobify = new Point({lat: 49.2823, lng: -123.1110});
+//lat 49.2762 lng -122.9163
+var pointSFU = new Point({lat: 49.2762, lng: -122.9163});
+
+var cannonballCourse = new Course({
+    name: "Cannonball Run",
+    start: pointMobify,
+    end: pointSFU
+});
+
+var gomerPyleDasher = new Dasher({
+    name: "gomerPyle"
+});
+
+var cannonballDash = new Dash({
+    course: cannonballCourse,
+    dasher: gomerPyleDasher
+});
+
+
+
+// HOMEVIEW
+// List of Courses
+// - your best dash
+// - your last dash
+// - start a new dash
+
+
+// Get distance for two points.
+
+
+
+ var Courses = Backbone.Collection.extend({
+   model: Course
+ });
+
+
+
+// var CourseRow = Backbone.View.extend({
+//   tagName: "li",
+//   render: function() {
+//     ...
+//   }
+// });
+
+
+
+</script>
+
+-->
+
 </body>
 </html>
+
